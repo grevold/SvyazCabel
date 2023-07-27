@@ -1,0 +1,83 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 300px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: white;
+  padding: 20px;
+}
+.input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: white;
+  padding-left: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  color: black;
+}
+.label {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Verdana, Tahoma, sans-serif;
+  margin-top: 20px;
+  color: black;
+}
+.text {
+  height: 60px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: white;
+  padding: 10px;
+  margin-top: 5px;
+  color: black;
+}
+.buttonUnLock {
+  height: 50px;
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Verdana, Tahoma, sans-serif;
+  background-color: rgba(0, 52, 255, 1);
+  cursor: pointer;
+}
+.buttonUnLock:hover {
+  background-color: rgb(86, 120, 255);
+}
+.buttonLock {
+  height: 50px;
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Verdana, Tahoma, sans-serif;
+  background-color: rgb(154, 154, 154);
+}
+.error_message {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Verdana, Tahoma, sans-serif;
+  color: rgb(252, 78, 78);
+}
+
+@media (min-width: 800px) {
+  .root {
+    max-width: 600px;
+  }
+}

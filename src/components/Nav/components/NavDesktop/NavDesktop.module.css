@@ -1,0 +1,113 @@
+.root {
+  width: 100%;
+  height: 150px;
+  position: fixed;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  z-index: 20;
+  background: rgb(4, 4, 86);
+  background: linear-gradient(
+    0deg,
+    rgba(9, 9, 121, 0.2) 0%,
+    rgba(0, 52, 255, 1) 100%
+  );
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  position: relative;
+}
+.navigation {
+  width: 100%;
+  max-width: 350px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  height: 30px;
+  font-family: Verdana, Tahoma, sans-serif;
+  cursor: pointer;
+  border-bottom: solid rgba(255, 255, 255, 0);
+  transition: border-bottom 0.3s ease-in-out;
+  width: 100px;
+  text-decoration: none;
+}
+.link:hover {
+  border-bottom: solid rgba(255, 255, 255, 1);
+}
+
+.contacts {
+  width: 100%;
+  max-width: 150px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 18px;
+  font-weight: 300;
+  font-family: Verdana, Tahoma, sans-serif;
+  cursor: pointer;
+}
+.telNumber {
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  opacity: 100;
+  transition: top 0.5s ease-in-out;
+  color: white;
+}
+.telNumber2{
+  composes:telNumber;
+  top: 120px;
+
+}
+.email {
+  cursor: pointer;
+  color: white;
+}
+.unVisibleTelNumber {
+  composes: telNumber;
+  top: 50px;
+  opacity: 0;
+}
+.email {
+  composes: tel;
+  max-width: 360px;
+}
+.logo25 {
+  width: 100px;
+}
+.telephonesBlock{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 800px) {
+  .container {
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    justify-content: space-between;
+  }
+}

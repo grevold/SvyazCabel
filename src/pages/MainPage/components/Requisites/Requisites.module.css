@@ -1,0 +1,82 @@
+.root {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.header {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 50px;
+  color: black;
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  width: 100px;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: auto;
+  bottom: 0;
+  right: auto;
+}
+.shadowBlock {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #0034ff;
+  filter: blur(60px);
+  z-index: 1;
+  top: -30px;
+  left: auto;
+  right: auto;
+  opacity: 100;
+  transition: opacity 1s ease-in-out;
+}
+.shadowBlockLowShadowEffect {
+  composes: shadowBlock;
+  opacity: 0;
+}
+.button {
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+  border: 2px solid #0034ff;
+  position: absolute;
+  z-index: 3;
+  top: 150px;
+  background: white;
+  font-size: 16px;
+  color: #0034ff;
+  font-weight: 600;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #0034ff;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media (min-width: 900px) {
+  .header {
+    font-size: 30px;
+  }
+  .root {
+    max-width: 600px;
+  }
+}

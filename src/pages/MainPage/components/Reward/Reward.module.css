@@ -1,0 +1,91 @@
+.visibleRoot {
+  width: 100%;
+  height: 500px;
+  max-width: 300px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: padding-top 0.5s ease-in-out;
+}
+.unVisibleRoot {
+  composes: visibleRoot;
+  padding-top: 200px;
+}
+.img {
+  width: 300px;
+}
+.text {
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  font-family: Verdana, Tahoma, sans-serif;
+  color: black;
+}
+.UnVisibleText {
+  composes: text;
+  left: 0;
+}
+.UnVisibleImg {
+  composes: img;
+  right: 0px;
+}
+
+@media (min-width: 600px) {
+  .visibleRoot {
+    flex-direction: row;
+    max-width: 500px;
+  }
+  .text {
+    text-align: start;
+    margin-left: 100px;
+    max-width: 200px;
+  }
+}
+@media (min-width: 900px) {
+  .visibleRoot {
+    max-width: 800px;
+  }
+  .text {
+    text-align: start;
+    font-size: 28px;
+    margin-right: 50px;
+    margin-left: 50px;
+    max-width: 500px;
+  }
+  .img {
+    width: 400px;
+  }
+}
+@media (min-width: 1000px) {
+  .visibleRoot {
+    justify-content: space-between;
+  }
+  .img {
+    width: 500px;
+  }
+  .text {
+    font-size: 28px;
+    margin-right: 60px;
+    margin-left: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .visibleRoot {
+    max-width: 900px;
+    justify-content: space-between;
+  }
+  .img {
+    width: 500px;
+  }
+  .text {
+    font-size: 28px;
+    margin-right: 120px;
+    margin-left: 50px;
+  }
+}

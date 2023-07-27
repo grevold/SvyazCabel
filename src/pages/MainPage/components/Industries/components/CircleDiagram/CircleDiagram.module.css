@@ -1,0 +1,47 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 50px;
+}
+.header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  max-width: 300px;
+  height: 50px;
+  text-align: center;
+  color: black;
+}
+
+.unit {
+  fill: none;
+  stroke-width: 10;
+  stroke: rgba(0, 52, 255, 1);
+  stroke-dasharray: 80 100;
+  transition: stroke-dasharray 1s ease-in-out;
+  position: absolute;
+}
+.img {
+  position: absolute;
+  width: 200px;
+  top: 100px;
+}
+.unit_half {
+  fill: none;
+  stroke-width: 10;
+  stroke: rgba(0, 52, 255, 1);
+  stroke-dasharray: 0 100;
+}
+.persent {
+  position: absolute;
+  z-index: 3;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: white;
+  bottom: 35%;
+  box-shadow: 5px black;
+}
