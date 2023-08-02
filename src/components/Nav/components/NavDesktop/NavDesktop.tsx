@@ -33,7 +33,6 @@ export function NavDesktop({ className }: Props) {
             </Link>
           </li>
         </ul>
-        <Logo25 className={s.logo25} />
         <ul className={s.contacts}>
           <li onClick={handleClickTel} className={s.tel}>
             <PhoneIcon />
