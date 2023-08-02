@@ -9,7 +9,6 @@ import { Slider } from "./components/Slider/Slider";
 export function MainPage() {
   return (
     <div>
-      {/* <ParalaxBanner /> */}
       <Slider />
       <History />
       <ClientsBlock />

@@ -168,8 +168,8 @@ export function WhiteLogo({ className }: Props) {
         fill="white"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M0 0L1013.51 46.6472L81.8937 32.9631L158.546 233.236L0 0Z"
         fill="white"
       />

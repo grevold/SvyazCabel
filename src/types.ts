@@ -7,8 +7,6 @@ export enum RoutePath {
 
 export interface ProductBanner {
   title: string;
-  marks: string;
-  products: string;
-  product_bg: string;
-  icons: string[];
+  text: string;
+  img: string;
 }

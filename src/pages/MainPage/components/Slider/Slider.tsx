@@ -5,14 +5,15 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import { useSlider } from "./useSlider";
 
 import s from "./Slider.module.css";
+import { useState, useEffect } from "react";
 
 const swiperConfig: SwiperProps = {
   modules: [Autoplay, Pagination, Navigation],
-  onAutoplayTimeLeft: function () {},
+  onAutoplayTimeLeft: function () { },
   spaceBetween: 0,
   centeredSlides: true,
   autoplay: {
-    delay: 8000,
+    delay: 800000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -22,10 +23,13 @@ const swiperConfig: SwiperProps = {
   speed: 1200,
   navigation: true,
   loop: true,
+  onSlideChange: function slideChange() { console.log("slide change") }
 };
 
-export function Slider() {
+export const Slider = () => {
   useSlider();
+  const activeSlider = document.querySelector(".swiper-slide swiper-slide-active")
+
   return (
     <div className={s.root}>
       <Swiper {...swiperConfig}>
