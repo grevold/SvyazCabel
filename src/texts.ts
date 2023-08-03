@@ -25,6 +25,12 @@ export const texts = {
       id: "slide3",
     }
   ],
+  Clients:
+    ["Rostelekom.png", "Trubodetal.png", "TsinkoviyZavod.png",
+      "StsAvtodor.png", "MehanicheskiyZavod.png", "TSK.png",
+      "CHTPZ.png", "SoyusPisheprom.png", "Unichel.png",
+      "MVD.png"
+    ],
   Requisites: [
     {
       title: `Полное наименование организации:`,

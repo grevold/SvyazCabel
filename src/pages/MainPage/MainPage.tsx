@@ -1,17 +1,14 @@
-import { ParalaxBanner } from "./components/ParalaxBanner/ParalaxBanner";
-import { History } from "./components/History/History";
 import { Industries } from "./components/Industries/Industries";
-import { ClientsBlock } from "./components/ClientsBlock/ClientsBlock";
 import { Reward } from "./components/Reward/Reward";
 import { BlockFormEmail } from "./components/FormEmail/BlockFormEmail";
 import { Slider } from "./components/Slider/Slider";
+import { Clients } from "./components/Clients/Clients";
 
 export function MainPage() {
   return (
     <div>
       <Slider />
-      <History />
-      <ClientsBlock />
+      <Clients />
       <Industries />
       <Reward />
       <BlockFormEmail />

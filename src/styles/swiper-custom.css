@@ -102,13 +102,13 @@
 /* Предыдущий */
 .swiper-slide-prev div img {
   transform: translateZ(100px) scale(1.5);
-  transition: transform 15s ease-in;
+  transition: transform 5s ease-in;
 }
 
 /* Следующий */
 .swiper-slide-next div div div h1 {
   transform: translateZ(100px) scale(1.5);
-  transition: transform 15s ease-in;
+  transition: transform 5s ease-in;
 }
 
 
