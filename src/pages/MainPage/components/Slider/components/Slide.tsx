@@ -7,7 +7,7 @@ interface Props {
   product: ProductBanner;
 }
 
-export function Slide({ product}: Props) {
+export function Slide({ product }: Props) {
 
   return (
     <div className={s.root}>

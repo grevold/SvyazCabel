@@ -5,6 +5,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import { useSlider } from "./useSlider";
 
 import s from "./Slider.module.css";
+import { useState } from "react";
 
 
 const swiperConfig: SwiperProps = {
@@ -27,8 +28,10 @@ const swiperConfig: SwiperProps = {
 
 export const Slider = () => {
   useSlider();
-  
- 
+  const [state, setState] = useState(false);
+  setTimeout(() => setState((prevState) => !prevState), 400)
+
+
 
   return (
     <div className={s.root}>
