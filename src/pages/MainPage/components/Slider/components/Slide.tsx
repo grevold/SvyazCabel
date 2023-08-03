@@ -1,3 +1,4 @@
+
 import { ProductBanner } from "../../../../../types";
 
 import s from "./Slide.module.css";
@@ -6,7 +7,8 @@ interface Props {
   product: ProductBanner;
 }
 
-export function Slide({ product }: Props) {
+export function Slide({ product}: Props) {
+
   return (
     <div className={s.root}>
       <div className={s.info}>
@@ -21,7 +23,7 @@ export function Slide({ product }: Props) {
         </div>
       </div>
       <img
-        className={s.bg_image}
+        className={s.bg_image_more}
         src={`${process.env.PUBLIC_URL}/slider/${product.img}`}
       />
     </div>
