@@ -55,41 +55,62 @@
 
 /* Анимация текста */
 
-  /* Текущий */
-  .swiper-slide-active div div div h1 {
-    margin-top: 0;
-    transition: margin-top 1s ease-in-out;
-  }
+/* Текущий */
+.swiper-slide-active div div div h1 {
+  margin-top: 0;
+  transition: margin-top 1s ease-in-out;
+}
 
-  /* Предыдущий */
-  .swiper-slide-prev div div div h1 {
-    margin-top: 200px;
-    transition: margin-top 1s ease-in-out;
-  }
+/* Предыдущий */
+.swiper-slide-prev div div div h1 {
+  margin-top: 200px;
+  transition: margin-top 1s ease-in-out;
+}
 
-  /* Следующий */
-  .swiper-slide-next div div div h1 {
-    margin-top: 200px;
-    transition: margin-top 1s ease-in-out;
-  }
+/* Следующий */
+.swiper-slide-next div div div h1 {
+  margin-top: 200px;
+  transition: margin-top 1s ease-in-out;
+}
 
-  /* Текущий */
-  .swiper-slide-active div div div div span {
-    margin-top: 0;
-    transition: margin-top 1s ease-in-out;
-  }
+/* Текущий */
+.swiper-slide-active div div div div span {
+  margin-top: 0;
+  transition: margin-top 1s ease-in-out;
+}
 
-  /* Предыдущий */
-  .swiper-slide-prev div div div div span {
-    margin-top: 200px;
-    transition: margin-top 1s ease-in-out;
-  }
+/* Предыдущий */
+.swiper-slide-prev div div div div span {
+  margin-top: 200px;
+  transition: margin-top 1s ease-in-out;
+}
 
-  /* Следующий */
-  .swiper-slide-next div div div div span {
-    margin-top: 200px;
-    transition: margin-top 1s ease-in-out;
-  }
+/* Следующий */
+.swiper-slide-next div div div div span {
+  margin-top: 200px;
+  transition: margin-top 1s ease-in-out;
+}
+
+/* Анимация слайда */
+
+/* Текущий */
+.swiper-slide-active div img {
+  transform: translateZ(100px) scale(1);
+  transition: transform 15s ease-in;
+}
+
+/* Предыдущий */
+.swiper-slide-prev div img {
+  transform: translateZ(100px) scale(1.5);
+  transition: transform 15s ease-in;
+}
+
+/* Следующий */
+.swiper-slide-next div div div h1 {
+  transform: translateZ(100px) scale(1.5);
+  transition: transform 15s ease-in;
+}
+
 
 @media (min-width: 500px) {
   .swiper-button-next {
@@ -109,6 +130,4 @@
     left: 20px;
     border: 1px solid white;
   }
-
- 
 }
