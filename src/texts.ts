@@ -23,14 +23,20 @@ export const texts = {
       на любых типах объектов в Челябинске и по всему региону.`,
       img: "slide3.png",
       id: "slide3",
-    }
+    },
   ],
-  Clients:
-    ["Rostelekom.png", "Trubodetal.png", "TsinkoviyZavod.png",
-      "StsAvtodor.png", "MehanicheskiyZavod.png", "TSK.png",
-      "CHTPZ.png", "SoyusPisheprom.png", "Unichel.png",
-      "MVD.png"
-    ],
+  Clients: [
+    "Rostelekom.png",
+    "Trubodetal.png",
+    "TsinkoviyZavod.png",
+    "StsAvtodor.png",
+    "MehanicheskiyZavod.png",
+    "TSK.png",
+    "CHTPZ.png",
+    "SoyusPisheprom.png",
+    "Unichel.png",
+    "MVD.png",
+  ],
   Requisites: [
     {
       title: `Полное наименование организации:`,
@@ -87,6 +93,20 @@ export const texts = {
     {
       title: `Email:`,
       text: `metall@promstroy74.ru`,
-    }
+    },
+  ],
+  Map: [
+    {
+      text: {
+        title: "Объект 1",
+        description: "Этот объект был построен в 2015 году",
+      },
+      cordinates: [
+        [55.160851, 61.398822],
+        [55.158891, 61.39933],
+        [55.158267, 61.404263],
+        [55.156497, 61.401622],
+      ],
+    },
   ],
 };

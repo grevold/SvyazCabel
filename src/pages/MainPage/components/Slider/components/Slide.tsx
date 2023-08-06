@@ -1,4 +1,3 @@
-
 import { ProductBanner } from "../../../../../types";
 
 import s from "./Slide.module.css";
@@ -8,7 +7,6 @@ interface Props {
 }
 
 export function Slide({ product }: Props) {
-
   return (
     <div className={s.root}>
       <div className={s.info}>
@@ -19,7 +17,6 @@ export function Slide({ product }: Props) {
           <div className={s.text_container}>
             <span className={s.text}>{product.text}</span>
           </div>
-
         </div>
       </div>
       <img

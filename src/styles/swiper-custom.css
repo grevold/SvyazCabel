@@ -111,7 +111,6 @@
   transition: transform 5s ease-in;
 }
 
-
 @media (min-width: 500px) {
   .swiper-button-next {
     right: 10px;

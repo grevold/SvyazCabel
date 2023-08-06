@@ -147,8 +147,7 @@
   .bg_image_low {
     composes: bg_image_more;
     transform: translateZ(100px) scale(1);
-    transition:transform 15s ease-in;
-    
+    transition: transform 15s ease-in;
   }
   .title {
     text-align: start;

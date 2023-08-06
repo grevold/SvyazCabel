@@ -15,8 +15,7 @@ export const useElementWidthInViewPortListener = <T extends HTMLElement>(
 
       if (
         distance <= 0 &&
-        -distance >=
-          (root.clientWidth / 100) * elementWidthInViewPortPercentage
+        -distance >= (root.clientWidth / 100) * elementWidthInViewPortPercentage
       ) {
         setIsElementInViewPort(true);
       } else {

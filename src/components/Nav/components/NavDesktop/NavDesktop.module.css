@@ -7,11 +7,7 @@
   align-items: center;
   z-index: 20;
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgb(0, 0, 0) 100%
-  );
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgb(0, 0, 0) 100%);
 }
 .container {
   width: 100%;
@@ -73,10 +69,9 @@
   transition: top 0.5s ease-in-out;
   color: white;
 }
-.telNumber2{
-  composes:telNumber;
+.telNumber2 {
+  composes: telNumber;
   top: 120px;
-
 }
 .email {
   cursor: pointer;
@@ -94,7 +89,7 @@
 .logo25 {
   width: 100px;
 }
-.telephonesBlock{
+.telephonesBlock {
   display: flex;
   flex-direction: column;
   justify-content: center;
