@@ -3,7 +3,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
-  
+
   background: #878787;
 }
 .header {
@@ -14,17 +14,17 @@
   transform-style: preserve-3d;
   z-index: -1;
 }
-.section{
-    display: flex;
-    flex-direction: column;
-    height: 800px;
-    background-color: rgb(255, 167, 167);
-    color: black;
+.section {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  background-color: rgb(255, 167, 167);
+  color: black;
 }
-.text{
-    display: block;
-    margin: 0 auto;
-    font-size: 30px;
-    transform: translateZ(10px);
-    z-index: 1;
+.text {
+  display: block;
+  margin: 0 auto;
+  font-size: 30px;
+  transform: translateZ(10px);
+  z-index: 1;
 }

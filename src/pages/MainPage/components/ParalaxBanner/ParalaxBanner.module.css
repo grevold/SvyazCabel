@@ -1,12 +1,11 @@
 .root {
-  perspective: 1000px;
+  /* perspective: 1000px; */
   overflow: hidden;
 }
 .layers_container {
   height: 100vh;
   position: relative;
-  transform-style: preserve-3d;
-  
+  /* transform-style: preserve-3d; */
 }
 .logo {
   width: 230px;

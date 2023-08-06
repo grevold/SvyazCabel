@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import s from "./ParalaxBanner.module.css";
 import { ArrowDown } from "./components/ArrowDown/ArrowDown";
@@ -8,10 +8,22 @@ export function ParalaxBanner() {
     x: 0,
     y: 0,
   });
+  const refContainer = useRef<any>(null);
 
   function handleMouseMove(event: any) {
+    console.log(event);
+
     setMousePosition({ x: event.pageX, y: event.pageY });
   }
+
+  function handleMouseDown(event: any) {
+    const container = refContainer.current;
+    if (!container) return;
+    container.addEventListener("mousemove", () => {
+      handleMouseMove(event);
+    });
+  }
+
   if (window.screen.width < 700) {
     return (
       <div className={s.root}>
@@ -48,11 +60,12 @@ export function ParalaxBanner() {
   return (
     <div className={s.root}>
       <div
+        ref={refContainer}
         className={s.layers_container}
-        onMouseMove={(event) => handleMouseMove(event)}
+        onMouseDown={(event) => handleMouseDown(event)}
         style={{
           transform: `rotateX(${
-            (MousePosition.x - window.innerWidth / 2) * -0.009
+            (MousePosition.x - window.innerWidth / 2) * -0.09
           }deg) rotateY(${
             (MousePosition.y - window.innerHeight / 2) * 0.01
           }deg)`,

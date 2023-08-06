@@ -7,10 +7,9 @@ import { useSlider } from "./useSlider";
 import s from "./Slider.module.css";
 import { useState } from "react";
 
-
 const swiperConfig: SwiperProps = {
   modules: [Autoplay, Pagination, Navigation],
-  onAutoplayTimeLeft: function () { },
+  onAutoplayTimeLeft: function () {},
   spaceBetween: 0,
   centeredSlides: true,
   autoplay: {
@@ -29,13 +28,11 @@ const swiperConfig: SwiperProps = {
 export const Slider = () => {
   useSlider();
   const [state, setState] = useState(false);
-  setTimeout(() => setState((prevState) => !prevState), 400)
-
-
+  setTimeout(() => setState((prevState) => !prevState), 400);
 
   return (
     <div className={s.root}>
-      <Swiper {...swiperConfig} >
+      <Swiper {...swiperConfig}>
         {texts.Slider.map((product) => (
           <SwiperSlide key={product.title}>
             <Slide product={product} />
@@ -44,4 +41,4 @@ export const Slider = () => {
       </Swiper>
     </div>
   );
-}
+};

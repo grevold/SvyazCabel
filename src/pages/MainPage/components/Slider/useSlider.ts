@@ -14,5 +14,4 @@ export function useSlider() {
     <path d="M32 49L46 36.5L32 24" stroke="white" strokeWidth="2" stroke-linecap="round" />
 </svg>`;
   }, []);
- 
 }

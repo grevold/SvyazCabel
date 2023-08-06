@@ -1,14 +1,20 @@
 import { YMaps, Map, Placemark, Polyline } from "@pbe/react-yandex-maps";
-import { useState,useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import s from "./Location.module.css";
 
 export function Location() {
-  const [state,setState]=useState(false);
-  const refObject1 = useRef()
-  function showBalloon(){
+  const [state, setState] = useState(false);
+  const refPolyline1 = useRef<any>(null);
+  useEffect(() => {
+    const polyline = refPolyline1.current;
+    if (!polyline) return;
+    console.log(polyline);
+    polyline.addEventListener("click", () => {
+      console.log(polyline);
+    });
+  }, []);
 
-  }
   return (
     <YMaps>
       <div className={s.root}>
@@ -47,27 +53,37 @@ export function Location() {
             >
               <div className={s.placemark_container}>
                 <div className={s.balloon}> Объект №1</div>
-                <Polyline ref={refObject1} index="object_1" onClick={()=>console.log(refObject1.current)}
+                <Polyline
+                  instanceRef={refPolyline1}
+                  index="object_1"
                   geometry={[
                     [55.160851, 61.398822],
-                    [55.158891, 61.399330],
+                    [55.158891, 61.39933],
                     [55.158267, 61.404263],
                     [55.156497, 61.401622],
                   ]}
-                  options={{
-                    strokeColor: "#01A9F0",
-                    strokeWidth: 10,
-                    hasBalloon:true,
-                    hasHint:true,
-                    openBalloonOnClick:false,
-                    openHintOnHover:true,
-                    
+                  properties={{
+                    balloonContent: <h1>hello</h1>,
+                    hintContent: <h1>hello</h1>,
+                    balloonContentHeader: <h1>hello</h1>,
+                    balloonContentBody: <h1>hello</h1>,
                   }}
-                  properties={
-                  {hintContent: "Офис", 
-                  ballContent:"hello" }}
-                  
+                  options={{
+                    hasBalloon: true,
+                    openBalloonOnClick: true,
+                  }}
                 />
+
+                {/* <Placemark
+                  geometry={[55.150859, 61.385872]}
+                  properties={{
+                    balloonContentHeader: "Заголовок",
+                    balloonContentBody: "Содержимое",
+                    balloonContentFooter: "Подвал",
+                    hintContent: "Подсказка"
+                  }}
+                  options={{ hasBalloon: true }}
+                /> */}
               </div>
             </Map>
           </div>
