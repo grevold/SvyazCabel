@@ -14,13 +14,13 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 300px;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .header {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 30px;
   font-family: Verdana, Tahoma, sans-serif;
   margin-bottom: 50px;
   display: block;
@@ -29,7 +29,7 @@
 }
 .subText {
   font-weight: 400;
-  font-size: 25px;
+  font-size: 16px;
   font-family: Verdana, Tahoma, sans-serif;
   margin-bottom: 50px;
   display: block;
@@ -53,4 +53,19 @@
 .balloonUnVisible {
   composes: balloonVisible;
   opacity: 0;
+}
+
+@media (min-width: 600px) {
+  .text {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .subText {
+    font-size: 24px;
+  }
+  .header {
+    font-size: 40px;
+  }
 }

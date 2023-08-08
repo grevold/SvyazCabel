@@ -1,4 +1,10 @@
-import { YMaps, Map, Polyline, ZoomControl } from "@pbe/react-yandex-maps";
+import {
+  YMaps,
+  Map,
+  Polyline,
+  ZoomControl,
+  Placemark,
+} from "@pbe/react-yandex-maps";
 import { useState } from "react";
 import { texts } from "../../../../texts";
 import s from "./MapObjects.module.css";
@@ -21,7 +27,7 @@ export function MapObjects() {
             defaultState={{ center: [55.150859, 61.385872], zoom: 15 }}
             className={s.map}
           >
-            <div className={s.placemark_container}>
+            <div className={s.geoObjects}>
               <div className={s.text}>
                 <h1 className={s.header}>Карта выполненных объектов</h1>
                 <span className={s.subText}>
@@ -37,7 +43,7 @@ export function MapObjects() {
               >
                 {state.text}
               </div>
-              {texts.Map.map((polyline) => (
+              {texts.Map.Polylines.map((polyline) => (
                 <Polyline
                   key={polyline.text.title}
                   geometry={polyline.cordinates}
@@ -72,6 +78,19 @@ export function MapObjects() {
                   onMouseLeave={() => {
                     setPolylineStyle((prevPolylineStyle) => !prevPolylineStyle);
                   }}
+                />
+              ))}
+              {texts.Map.Placemarks.map((placemark) => (
+                <Placemark
+                  geometry={placemark.cordinates}
+                  className={s.placemark}
+                  properties={{
+                    balloonContentHeader: "Заголовок",
+                    balloonContentBody: "Содержимое",
+                    balloonContentFooter: "Подвал",
+                    hintContent: "Подсказка",
+                  }}
+                  options={{ hasBalloon: true }}
                 />
               ))}
 
