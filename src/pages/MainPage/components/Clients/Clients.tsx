@@ -6,6 +6,7 @@ export function Clients() {
   return (
     <div className={s.root}>
       <h1 className={s.header}>Наши клиенты</h1>
+
       <ul className={s.clientsList}>
         {texts.Clients.map((logo) => (
           <li key={logo}>
