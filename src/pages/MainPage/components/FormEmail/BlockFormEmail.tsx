@@ -13,10 +13,10 @@ export function BlockFormEmail() {
 
     return emailjs
       .sendForm(
-        "service_6f56s68",
-        "template_3cy2rdi",
+        "service_v5d7rfb",
+        "template_14ahvmh",
         form,
-        "6xU0rvWinnDuAHQkq"
+        "vQ8Xdu_NZDBlLutft"
       )
       .then(
         (result) => {

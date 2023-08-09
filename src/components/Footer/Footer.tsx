@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import s from "./Footer.module.css";
 import { RoutePath } from "../../types";
-import { WhiteLogo } from "../../icons/WhiteLogo";
 import { PhoneIcon } from "../../icons/PhoneIcon";
 import { EmailIcon } from "../../icons/EmailIcon";
 import cn from "classnames";
+import { WhiteLogoHorizontal } from "../../icons/WhiteLogoHorizontal";
 
 interface Props {
   className?: string;
@@ -41,7 +41,7 @@ export function Footer({ className }: Props) {
             <span className={s.contact}>metall@promstroy74.ru</span>
           </li>
         </ul>
-        <WhiteLogo className={s.logo} />
+        <WhiteLogoHorizontal className={s.logo} />
       </div>
     </div>
   );
