@@ -6,8 +6,9 @@
   justify-content: end;
   align-items: center;
   z-index: 20;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgb(0, 0, 0) 100%);
+  background-color: rgba(244, 101, 36, 1);
+  /* background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(244, 101, 36, 1) 0%, rgb(0, 0, 0) 100%); */
 }
 .container {
   width: 100%;

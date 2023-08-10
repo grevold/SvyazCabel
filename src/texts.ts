@@ -129,13 +129,26 @@ export const texts = {
     ],
   },
   ListWorks: [
-    { title: "Строительство ВОЛС", img: "Vols.png" },
-    { title: "Реконструкция междугородних ВОЛС", img: "IntercityVOLS.png" },
+    { title: "Строительство ВОЛС", img: "Vols.png", id: "Building_VOLS" },
+    {
+      title: "Реконструкция междугородних ВОЛС",
+      img: "IntercityVOLS.png",
+      id: "Reconstruction_VOLS",
+    },
     {
       title: "Строительство телефонных канализаций",
       img: "TelephoneSewerage.png",
+      id: "Building_Telephone_Sewers",
     },
-    { title: "Видеонаблюдение", img: "VideoSecurity.png" },
-    { title: "Строительство прочих линейных сооружений", img: "Others.png" },
+    {
+      title: "Видеонаблюдение",
+      img: "VideoSecurity.png",
+      id: "Video_Security",
+    },
+    {
+      title: "Строительство прочих линейных сооружений",
+      img: "Others.png",
+      id: "Others",
+    },
   ],
 };
