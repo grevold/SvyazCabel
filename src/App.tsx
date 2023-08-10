@@ -6,6 +6,7 @@ import { MainPage } from "./pages/MainPage/MainPage";
 import { RequisitesPage } from "./pages/RequisitesPage/RequisitesPage";
 import { Layout } from "./components/Layout/Layout";
 import { EmailPage } from "./pages/EmailPage/EmailPage";
+import { ArticlePage } from "./pages/MainPage/components/ArticlePage/ArticlePage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route element={<ContactsPage />} path={RoutePath.ContactsPage} />
           <Route element={<RequisitesPage />} path={RoutePath.RequisitesPage} />
           <Route element={<EmailPage />} path={RoutePath.EmailPage} />
+          <Route element={<ArticlePage />} path={RoutePath.ArticlePage} />
         </Routes>
       </Layout>
     </HashRouter>

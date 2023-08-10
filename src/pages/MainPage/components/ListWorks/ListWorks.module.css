@@ -1,7 +1,11 @@
 .root {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   width: 100%;
+  background-color: rgba(73, 73, 73, 1);
+}
+.link {
+  text-decoration: none;
 }
 
 .listWorks {
@@ -22,6 +26,8 @@
   max-width: 300px;
   margin: 0 auto;
   margin-bottom: 50px;
+  color: white;
+  text-decoration: none;
 }
 .img {
   width: 250px;
@@ -30,11 +36,12 @@
 .titleWork {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
-  margin-bottom: 20px;
   max-width: 320px;
   height: 50px;
+  color: white;
+  text-decoration: none;
 }
 .container {
   display: flex;
@@ -45,6 +52,15 @@
   width: 100%;
   max-width: 300px;
   cursor: pointer;
+}
+.container h2:hover {
+  color: rgba(244, 101, 36, 1);
+}
+.container div img:hover {
+  width: 100%;
+  transition: width 0.3s ease-in;
+  border-radius: 50px;
+  border: 10px solid rgba(244, 101, 36, 1);
 }
 
 @media (min-width: 700px) {
@@ -60,10 +76,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .img:hover {
-    width: 100%;
-    transition: width 0.3s ease-in;
   }
 }
 
@@ -85,6 +97,7 @@
     width: 350px;
   }
   .titleWork {
+    font-size: 20px;
     margin-bottom: 50px;
   }
   .img_container {
