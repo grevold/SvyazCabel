@@ -2,7 +2,7 @@
   "name": "template-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://grevold.github.io/PromStroy/",
+  "homepage": "https://grevold.github.io/SvyazCabel/",
   "dependencies": {
     "2gis-maps": "^3.7.3",
     "@google/maps": "^1.1.3",
