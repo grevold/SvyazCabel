@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PromStroy/static/css/main.c94ab077.css",
-    "main.js": "/PromStroy/static/js/main.5ac6cea8.js",
-    "static/js/787.0217c058.chunk.js": "/PromStroy/static/js/787.0217c058.chunk.js",
-    "index.html": "/PromStroy/index.html",
-    "main.c94ab077.css.map": "/PromStroy/static/css/main.c94ab077.css.map",
-    "main.5ac6cea8.js.map": "/PromStroy/static/js/main.5ac6cea8.js.map",
-    "787.0217c058.chunk.js.map": "/PromStroy/static/js/787.0217c058.chunk.js.map"
+    "main.css": "/SvyazCabel/static/css/main.c94ab077.css",
+    "main.js": "/SvyazCabel/static/js/main.e1df5052.js",
+    "static/js/787.0217c058.chunk.js": "/SvyazCabel/static/js/787.0217c058.chunk.js",
+    "index.html": "/SvyazCabel/index.html",
+    "main.c94ab077.css.map": "/SvyazCabel/static/css/main.c94ab077.css.map",
+    "main.e1df5052.js.map": "/SvyazCabel/static/js/main.e1df5052.js.map",
+    "787.0217c058.chunk.js.map": "/SvyazCabel/static/js/787.0217c058.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c94ab077.css",
-    "static/js/main.5ac6cea8.js"
+    "static/js/main.e1df5052.js"
   ]
 }
