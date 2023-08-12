@@ -1,15 +1,15 @@
 .root {
   position: fixed;
-  top: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 52, 255);
+  background-color: rgb(244, 101, 36);
   z-index: 22;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: margin-left 0.5s ease-in-out;
-  left: 100%;
+  transition: margin-bottom 0.5s ease-in-out;
+  bottom: 100%;
 }
 
 .root_fadeIn {
@@ -26,7 +26,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .listLinks {
@@ -40,7 +40,7 @@
 }
 
 .blockFeedback {
-  margin-top: 30px;
+  margin-bottom: 30px;
   width: 100%;
   max-width: 200px;
   display: flex;
@@ -80,20 +80,20 @@
 
 @keyframes fadeIn {
   from {
-    left: 100%;
+    bottom: 100%;
   }
 
   to {
-    left: 0;
+    bottom: 0;
   }
 }
 
 @keyframes fadeOut {
   from {
-    left: 100%;
+    bottom: 100%;
   }
 
   to {
-    left: 0;
+    bottom: 0;
   }
 }

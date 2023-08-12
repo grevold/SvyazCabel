@@ -38,7 +38,7 @@ export function Footer({ className }: Props) {
           </li>
           <li className={s.contact_block}>
             <EmailIcon />
-            <span className={s.contact}>metall@promstroy74.ru</span>
+            <span className={s.contact}>oooskabel@yandex.ru</span>
           </li>
         </ul>
         <WhiteLogoHorizontal className={s.logo} />

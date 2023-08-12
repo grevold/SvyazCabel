@@ -38,10 +38,12 @@
   margin-top: 30px;
 }
 .balloonVisible {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 200px;
-  background: #3e3e3e;
-  color: white;
+  padding: 20px;
+  background: #f46524cc;
+  color: rgb(255, 255, 255);
   opacity: 100;
   transition: opacity 1s ease-in-out;
   position: absolute;
@@ -49,6 +51,9 @@
   margin-left: auto;
   margin-right: auto;
   right: 0;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 .balloonUnVisible {
   composes: balloonVisible;
@@ -59,13 +64,20 @@
   .text {
     max-width: 500px;
   }
+  .balloonVisible {
+    max-width: 400px;
+  }
 }
 
 @media (min-width: 1000px) {
   .subText {
     font-size: 24px;
+    width: 500px;
   }
   .header {
     font-size: 40px;
+  }
+  .balloonVisible {
+    max-width: 600px;
   }
 }
