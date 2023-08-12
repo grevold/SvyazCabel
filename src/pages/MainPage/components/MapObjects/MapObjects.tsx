@@ -24,7 +24,7 @@ export function MapObjects() {
             instanceRef={(ref) => {
               ref && ref.behaviors.disable("scrollZoom");
             }}
-            defaultState={{ center: [55.150859, 61.385872], zoom: 15 }}
+            defaultState={{ center: [55.150859, 61.385872], zoom: 8 }}
             className={s.map}
           >
             <div className={s.geoObjects}>
@@ -90,7 +90,10 @@ export function MapObjects() {
                     balloonContentFooter: "Подвал",
                     hintContent: "Подсказка",
                   }}
-                  options={{ hasBalloon: true }}
+                  options={{ iconColor: "#f46524cc" }}
+                  onClick={() => {
+                    showBalloon(`${placemark.text.description}`);
+                  }}
                 />
               ))}
 
