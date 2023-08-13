@@ -36,6 +36,7 @@ export const texts = {
     "SoyusPisheprom.png",
     "Unichel.png",
     "MVD.png",
+    "Legion.png",
   ],
   Requisites: [
     {

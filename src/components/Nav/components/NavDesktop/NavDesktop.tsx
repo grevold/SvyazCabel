@@ -3,9 +3,8 @@ import s from "./NavDesktop.module.css";
 import { PhoneIcon } from "./../../../../icons/PhoneIcon";
 import { EmailIcon } from "./../../../../icons/EmailIcon";
 import { useNavDesktop } from "./useNavDesktop";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { RoutePath } from "../../../../types";
-import { Logo25 } from "../../../../icons/Logo25";
 
 interface Props {
   className?: string;
@@ -13,22 +12,45 @@ interface Props {
 
 export function NavDesktop({ className }: Props) {
   const { state, handleClickTel, handleClickEmail } = useNavDesktop();
+  const location = useLocation();
+  console.log(location.pathname);
   return (
     <div className={cn(s.root, className)}>
       <div className={s.container}>
         <ul className={s.navigation}>
           <li>
-            <Link className={s.link} to={RoutePath.MainPage}>
+            <Link
+              className={
+                location.pathname === RoutePath.MainPage
+                  ? s.link_active
+                  : s.link
+              }
+              to={RoutePath.MainPage}
+            >
               Главная
             </Link>
           </li>
           <li>
-            <Link className={s.link} to={RoutePath.RequisitesPage}>
+            <Link
+              className={
+                location.pathname === RoutePath.RequisitesPage
+                  ? s.link_active
+                  : s.link
+              }
+              to={RoutePath.RequisitesPage}
+            >
               Реквизиты
             </Link>
           </li>
           <li>
-            <Link className={s.link} to={RoutePath.ContactsPage}>
+            <Link
+              className={
+                location.pathname === RoutePath.ContactsPage
+                  ? s.link_active
+                  : s.link
+              }
+              to={RoutePath.ContactsPage}
+            >
               Контакты
             </Link>
           </li>
