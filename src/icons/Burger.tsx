@@ -1,6 +1,11 @@
-export function Burger() {
+interface Props {
+  className?: string;
+}
+
+export function Burger({ className }: Props) {
   return (
     <svg
+      className={className}
       width="43"
       height="29"
       viewBox="0 0 53 39"
