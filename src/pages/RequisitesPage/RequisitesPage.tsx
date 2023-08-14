@@ -1,42 +1,66 @@
-import { Requisites } from "../MainPage/components/Requisites/Requisites";
-import { texts } from "../../texts";
-import { useState } from "react";
 import s from "./RequisitesPage.module.css";
-import { ArrowDown } from "./../../icons/ArrowDown";
-import { ArrowUp } from "../../icons/ArrowUp";
 
 export function RequisitesPage() {
-  const [state, setState] = useState(false);
-  function handleClick() {
-    if (state) {
-      setState((prevState) => !prevState);
-      window.scrollTo(0, 0);
-      return;
-    }
-    setState((prevState) => !prevState);
+  function playKick() {
+    let audio = new Audio(
+      `${process.env.PUBLIC_URL}/Samples/Drums/Kick_02.mp3`
+    );
+    audio.play();
   }
-  return (
-    <>
+  function playHat() {
+    let audio = new Audio(`${process.env.PUBLIC_URL}/Samples/Drums/Hat_01.mp3`);
+    audio.play();
+  }
+  function playClap() {
+    let audio = new Audio(
+      `${process.env.PUBLIC_URL}/Samples/Drums/Clap_06.mp3`
+    );
+    audio.play();
+  }
+  function playBass() {
+    let audio = new Audio(
+      `${process.env.PUBLIC_URL}/Samples/Drums/Bass_01.mp3`
+    );
+    audio.play();
+  }
+
+  if (window.screen.width > 1000) {
+    return (
       <div className={s.root}>
-        <div className={s.container}>
-          <h1 className={s.header}>Реквизиты</h1>
-
-          <div className={state ? s.tableRequisites : s.hiddenTableRequisites}>
-            {texts.Requisites.map((requisit) => (
-              <div className={s.row} key={requisit.title}>
-                <span className={s.title}>{requisit.title}</span>
-                <span className={s.text}>{requisit.text}</span>
-              </div>
-            ))}
-          </div>
-          <button className={s.button} onClick={handleClick}>
-            <span>{state ? "Скрыть" : "Развернуть"}</span>
-            {state ? <ArrowUp /> : <ArrowDown />}
+        <div className={s.playground}>
+          <button className={s.sound} onMouseDown={playKick}>
+            Kick
           </button>
-
-          <Requisites />
+          <button className={s.sound} onMouseDown={playHat}>
+            Hat
+          </button>
+          <button className={s.sound} onMouseDown={playClap}>
+            Clap
+          </button>
+          <button className={s.sound} onMouseDown={playBass}>
+            Bass
+          </button>
         </div>
       </div>
-    </>
+    );
+  }
+
+  return (
+    <div className={s.root}>
+      <div className={s.playground}>
+        <button className={s.sound} onTouchStart={playKick}>
+          Kick
+        </button>
+        <button className={s.sound} onTouchStart={playHat}>
+          Hat
+        </button>
+        <button className={s.sound} onTouchStart={playClap}>
+          Clap
+        </button>
+        <button className={s.sound} onTouchStart={playBass}>
+          Bass
+        </button>
+      </div>
+    </div>
   );
 }
