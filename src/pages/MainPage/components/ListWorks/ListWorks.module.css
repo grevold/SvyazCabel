@@ -3,6 +3,7 @@
   padding-bottom: 50px;
   width: 100%;
   background-color: rgb(114, 114, 114);
+  position: relative;
 }
 .link {
   text-decoration: none;

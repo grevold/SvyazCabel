@@ -6,6 +6,7 @@ export const useElementInViewPortListener = <T extends HTMLElement>(
   const ref = useRef<T>(null);
   const [isElementInViewPort, setIsElementInViewPort] =
     useState<boolean>(false);
+  const [isAnimationFinished, setAnimationFinished] = useState<boolean>(false);
 
   useEffect(() => {
     function handleScroll(event: Event) {
@@ -16,11 +17,11 @@ export const useElementInViewPortListener = <T extends HTMLElement>(
       if (
         distance <= 0 &&
         -distance >=
-          (root.clientHeight / 100) * elementHeightInViewPortPercentage
+          (root.clientHeight / 100) * elementHeightInViewPortPercentage &&
+        isAnimationFinished === false
       ) {
         setIsElementInViewPort(true);
-      } else {
-        setIsElementInViewPort(false);
+        setAnimationFinished(true);
       }
     }
     window.addEventListener("scroll", handleScroll);
@@ -28,5 +29,5 @@ export const useElementInViewPortListener = <T extends HTMLElement>(
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  return { ref, isElementInViewPort };
+  return { ref, isElementInViewPort, isAnimationFinished };
 };

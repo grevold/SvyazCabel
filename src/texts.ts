@@ -37,6 +37,7 @@ export const texts = {
     "Unichel.png",
     "MVD.png",
     "Legion.png",
+    "Dortransstroy.png",
   ],
   Requisites: [
     {
