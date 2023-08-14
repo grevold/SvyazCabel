@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/SvyazCabel/static/css/main.c94ab077.css",
-    "main.js": "/SvyazCabel/static/js/main.e1df5052.js",
+    "main.css": "/SvyazCabel/static/css/main.795a5479.css",
+    "main.js": "/SvyazCabel/static/js/main.2455ffb4.js",
     "static/js/787.0217c058.chunk.js": "/SvyazCabel/static/js/787.0217c058.chunk.js",
     "index.html": "/SvyazCabel/index.html",
-    "main.c94ab077.css.map": "/SvyazCabel/static/css/main.c94ab077.css.map",
-    "main.e1df5052.js.map": "/SvyazCabel/static/js/main.e1df5052.js.map",
+    "main.795a5479.css.map": "/SvyazCabel/static/css/main.795a5479.css.map",
+    "main.2455ffb4.js.map": "/SvyazCabel/static/js/main.2455ffb4.js.map",
     "787.0217c058.chunk.js.map": "/SvyazCabel/static/js/787.0217c058.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c94ab077.css",
-    "static/js/main.e1df5052.js"
+    "static/css/main.795a5479.css",
+    "static/js/main.2455ffb4.js"
   ]
 }
