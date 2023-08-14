@@ -34,7 +34,7 @@ export function Footer({ className }: Props) {
         <ul className={s.contacts_container}>
           <li className={s.contact_block}>
             <PhoneIcon />
-            <span className={s.contact}>+7 952 512-88-60</span>
+            <span className={s.contact}>+7 351 282-11-77</span>
           </li>
           <li className={s.contact_block}>
             <EmailIcon />
