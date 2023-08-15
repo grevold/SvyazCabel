@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 .container {
   width: 100%;
@@ -22,10 +23,6 @@
 .prev {
   width: 300px;
   cursor: pointer;
-  transition: width 0.3s ease-in-out;
-}
-.prev:hover {
-  width: 350px;
   transition: width 0.3s ease-in-out;
 }
 .header {
@@ -48,11 +45,6 @@
   margin-bottom: 100px;
   text-decoration: none;
 }
-.button:hover {
-  background-color: rgba(244, 101, 36, 1);
-  color: white;
-  border: none;
-}
 
 @media (min-width: 950px) {
   .root {
@@ -63,5 +55,17 @@
     max-width: none;
     height: 500px;
     width: 500px;
+  }
+  .prev:hover {
+    width: 350px;
+    transition: width 0.3s ease-in-out;
+  }
+  .document {
+    margin: 0;
+  }
+  .button:hover {
+    background-color: rgba(244, 101, 36, 1);
+    color: white;
+    border: none;
   }
 }

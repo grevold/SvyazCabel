@@ -28,6 +28,112 @@ export function Clients() {
   const { ref: ref12, isElementInViewPort: isElementInViewPort12 } =
     useElementInViewPortListener<HTMLDivElement>(50);
 
+  if (window.screen.width < 1200) {
+    return (
+      <div className={s.root}>
+        <h1 className={s.header}>Наши клиенты</h1>
+        <ul className={s.clientsList}>
+          <li>
+            <div>
+              <img
+                className={s.logo}
+                src={`${process.env.PUBLIC_URL}/clients/Rostelekom.png`}
+              />
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                className={s.logo}
+                src={`${process.env.PUBLIC_URL}/clients/Trubodetal.png`}
+              />
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                className={s.logo}
+                src={`${process.env.PUBLIC_URL}/clients/TsinkoviyZavod.png`}
+              />
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                className={s.logo}
+                src={`${process.env.PUBLIC_URL}/clients/StsAvtodor.png`}
+              />
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                className={s.logo}
+                src={`${process.env.PUBLIC_URL}/clients/MehanicheskiyZavod.png`}
+              />
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                className={s.logo}
+                src={`${process.env.PUBLIC_URL}/clients/TSK.png`}
+              />
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                className={s.logo}
+                src={`${process.env.PUBLIC_URL}/clients/CHTPZ.png`}
+              />
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                className={s.logo}
+                src={`${process.env.PUBLIC_URL}/clients/SoyusPisheprom.png`}
+              />
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                className={s.logo}
+                src={`${process.env.PUBLIC_URL}/clients/Unichel.png`}
+              />
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                className={s.logo}
+                src={`${process.env.PUBLIC_URL}/clients/MVD.png`}
+              />
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                className={s.logo}
+                src={`${process.env.PUBLIC_URL}/clients/Legion.png`}
+              />
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                className={s.logo}
+                src={`${process.env.PUBLIC_URL}/clients/Dortransstroy.png`}
+              />
+            </div>
+          </li>
+        </ul>
+      </div>
+    );
+  }
+
   return (
     <div className={s.root}>
       <h1 className={s.header}>Наши клиенты</h1>
