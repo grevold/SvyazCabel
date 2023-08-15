@@ -6,8 +6,8 @@ export function ContactsPage() {
       <div className={s.container}>
         <div className={s.text_block}>
           <h1 className={s.header}>Контакты</h1>
-          <h2 className={s.sub_header}>Телефоны:</h2>
-          <span className={s.adress}>+7 952 512-88-60</span>
+          <h2 className={s.sub_header}>Телефон:</h2>
+          <span className={s.adress}>+7 351 282-11-77</span>
           <h2 className={s.sub_header}>E-mail:</h2>
           <span className={s.adress}>oooskabel@yandex.ru</span>
           <h2 className={s.sub_header}>Адрес:</h2>
